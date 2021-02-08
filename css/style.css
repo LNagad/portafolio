@@ -1,197 +1,276 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 main {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .tittles {
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 40px;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
 }
 
 .fonts {
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 /* ----- Header */
-
 main header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #2C3E50;
-    position: fixed;
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2C3E50;
+  position: fixed;
 }
 
 main header nav {
-    width: 45%;    
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    align-items: center;
-    
+  width: 45%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  align-items: center;
 }
+
 main header a {
-    
-    font-size: 18px;
+  font-size: 18px;
 }
+
 main header .logo {
-    width: 40%;
+  width: 40%;
 }
+
 main header .logo > a {
-    font-size: 34px;
-
+  font-size: 34px;
 }
 
-main>header nav li {
-    list-style: none;
+main > header nav li {
+  list-style: none;
 }
 
-main>header nav li > a {
-    text-decoration: none;
-    color: #fff;
+main > header nav li > a {
+  text-decoration: none;
+  color: #fff;
 }
 
-main>header nav li > a:hover {
-    color: #ffe227;
-    transition: 1s;
+main > header nav li > a:hover {
+  color: #ffe227;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
+
 /* container */
-
-.container{
-    width: 100%;
-    height: 550px;
-    background: #eb596e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner {
+  width: 100%;
+  height: 550px;
+  background: #eb596e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container h1 {
-    font-size: 60px;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 10px solid #ffe227;
+.banner h1 {
+  font-size: 60px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 10px solid #ffe227;
 }
 
 .cards {
-    width: 100%;
-    height: 380px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.cards > h1 {
-    color: #000;
-    font-size: 40px;
-    margin-top: 30px;
+
+.cards h1 {
+  text-align: center;
+  width: 100%;
+  color: #000;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+.cards article {
+  width: 20%;
+  height: 200px;
+  background: #000;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.cards article img {
+  width: 100%;
+  height: 100%;
+}
+
+.cards article img:hover {
+  overflow: hidden;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .about {
-    height: 200px;
-    background: #ffe227;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
-} 
+  height: 200px;
+  background: #ffe227;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
 
 .about a {
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: #000;
-}
-.about a:hover {
-    transition: 1s;
-    border-bottom: 10px solid #2C3E50;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
 }
 
+.about a:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  border-bottom: 10px solid #2C3E50;
+}
 
 /* responsive */
 @media only screen and (max-width: 900px) {
-
-    main>header nav {
-        width: 55%;
-    }
-
-    main>header nav li > a {
-        font-size: 16px;
-    }
-    
+  main > header nav {
+    width: 55%;
+  }
+  main > header nav li > a {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
+  .container h1 {
+    font-size: 45px;
+    border-bottom: 8px solid #ffe227;
+  }
+  .cards article {
+    width: 47%;
+  }
+}
 
-    .container h1 {
-        font-size: 45px;
-        border-bottom: 8px solid #ffe227;
-    }
-    
-}
 @media only screen and (max-width: 700px) {
-    main header {
-        height: 120px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    main header .logo {
-        width: 100%;
-        justify-content: center;
-    }
-    main header nav {
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-    }
+  main header {
+    height: 120px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main header .logo {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main header nav {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
+
 @media only screen and (max-width: 450px) {
-    main header {
-        height: 190px;
-    }
-    main header .logo {
-        height: 45%;
-    }
-    main header nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-    main header nav li {
-        width: 100%;
-        text-align: center;
-    }
-    main header nav li:hover {
-        background: #ffe227;
-    }
-    .container {
-        justify-content: center;
-    }
-    .container h1 {
-        font-size: 45px;
-        border: none;
-        text-align: center;
-    }
+  main header {
+    height: 190px;
+  }
+  main header .logo {
+    height: 45%;
+  }
+  main header nav {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main header nav li {
+    width: 100%;
+    text-align: center;
+  }
+  main header nav li:hover {
+    background: #ffe227;
+  }
+  .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container h1 {
+    font-size: 45px;
+    border: none;
+    text-align: center;
+  }
+  .about {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
+/*# sourceMappingURL=style.css.map */
