@@ -191,7 +191,7 @@ main > header nav li > a:hover {
 }
 
 @media only screen and (max-width: 800px) {
-  .container h1 {
+  .banner h1 {
     font-size: 45px;
     border-bottom: 8px solid #ffe227;
   }
@@ -258,12 +258,12 @@ main > header nav li > a:hover {
   main header nav li:hover {
     background: #ffe227;
   }
-  .container {
+  .banner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .container h1 {
+  .banner h1 {
     font-size: 45px;
     border: none;
     text-align: center;
